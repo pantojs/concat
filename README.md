@@ -6,10 +6,14 @@ Concat transformer for panto.
 ```js
 panto.loadTransformer('concat');
 
-panto.$('**/*.js').concat();
+panto.$('**/*.js').concat({
+    bundle: 'bundle.js'
+});
 ```
 
 ## options
+ - bundle: String|Function
+ - sortBy: Function
 
 [npm-url]: https://npmjs.org/package/panto-transformer-concat
 [downloads-image]: http://img.shields.io/npm/dm/panto-transformer-concat.svg
